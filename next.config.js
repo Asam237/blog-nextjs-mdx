@@ -1,16 +1,5 @@
-const { i18n } = require("./next-i18next.config");
+const withMDX = require("@next/mdx")();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  env: {
-    NEXT_PUBLIC_API_PORT: process.env.NEXT_PUBLIC_API_PORT,
-  },
-  i18n,
-  transpilePackages: ["gsap"],
-  poweredByHeader: false,
-  experimental: {
-    scrollRestoration: false,
-  },
-};
-
-module.exports = nextConfig;
+module.exports = withMDX({
+  extension: /\.(md|mdx)$/,
+});
