@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Remove scrollbar: Start */
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  /* Remove scrollbar: End */
+
+  /* html,
+  body,
+  #__next {
+    @apply w-full h-full m-0 p-0;
+  } */
+
+  html {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: clamp(1.12rem, 0.21vw + 1.1rem, 1.25rem);
+  }
+
+  body {
+    @apply text-gray-950 font-light;
+  }
+
+  /* Lenis Recommendations */
+  /* See https://github.com/studio-freight/lenis?tab=readme-ov-file#recommended-css */
+  html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  #__layout {
+    @apply origin-bottom;
+  }
+}
+
+@layer utilities {
+  /* Hiding class, making content visible only to screen readers but not visually */
+  /* "sr" meaning "screen-reader" */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
