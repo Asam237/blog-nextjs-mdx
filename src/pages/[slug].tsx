@@ -3,9 +3,11 @@ import { FC } from "react";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import PostDetail from "@/components/PostDetail";
+import Header from "@/components/Header";
+import { DefaultLayout } from "@/components/layout";
 
 interface CustomMDXRemoteSerializeResult extends MDXRemoteSerializeResult {
   scope: Record<string, unknown>;
@@ -16,15 +18,18 @@ interface PostProps {
   mdxSource: CustomMDXRemoteSerializeResult;
   frontMatter: {
     title: string;
+    subtitle: string;
   };
 }
 
 const Post: FC<PostProps> = ({ mdxSource, frontMatter }) => {
   return (
-    <div>
-      <h1>{frontMatter.title}</h1>
-      <PostDetail mdxSource={mdxSource} />
-    </div>
+    <DefaultLayout>
+      <div className="container mx-auto py-4 text-gray-300 text-xs leading-6">
+        <h1 className="text-white text-lg">{frontMatter.subtitle}</h1>
+        <PostDetail mdxSource={mdxSource} />
+      </div>
+    </DefaultLayout>
   );
 };
 

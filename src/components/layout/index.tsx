@@ -1,17 +1,17 @@
 import type { ReactNode } from "react";
+import { Footer } from "../Footer";
+import Header from "../Header";
 
 interface DefaultLayoutProps extends React.AllHTMLAttributes<HTMLDivElement> {
   children: ReactNode;
-  title?: string;
 }
 
-export const DefaultLayout = ({ children, title }: DefaultLayoutProps) => {
+export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <>
-      <header>
-        <title>{title}</title>
-      </header>
-      {children}
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };
