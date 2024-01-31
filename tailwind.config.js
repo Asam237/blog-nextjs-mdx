@@ -43,17 +43,17 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "1440px",
+          maxWidth: "1000px",
           marginLeft: "auto",
           marginRight: "auto",
           "@screen md": {
-            maxWidth: "1220px",
+            maxWidth: "900px",
           },
           "@screen lg": {
-            maxWidth: "1440px",
+            maxWidth: "900px",
           },
           "@screen xl": {
-            maxWidth: "1440px",
+            maxWidth: "900px",
           },
         },
       });

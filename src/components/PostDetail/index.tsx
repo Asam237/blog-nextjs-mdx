@@ -10,11 +10,7 @@ interface PostDetailProps {
 }
 
 const PostDetail: React.FC<PostDetailProps> = ({ mdxSource }) => {
-  return (
-    <div>
-      <MDXRemote {...mdxSource} />
-    </div>
-  );
+  return <MDXRemote {...mdxSource} />;
 };
 
 export default PostDetail;
