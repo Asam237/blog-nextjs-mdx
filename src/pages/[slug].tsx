@@ -34,7 +34,7 @@ const Post: FC<PostProps> = ({ mdxSource, frontMatter }) => {
 };
 
 export async function getStaticPaths() {
-  const postsDirectory = path.join(process.cwd(), "posts");
+  const postsDirectory = path.join(process.cwd(), "datas/posts");
   const fileNames = fs.readdirSync(postsDirectory);
 
   const paths = fileNames.map((fileName) => ({
@@ -50,7 +50,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
-  const postsDirectory = path.join(process.cwd(), "posts");
+  const postsDirectory = path.join(process.cwd(), "datas/posts");
   const filePath = path.join(postsDirectory, `${params.slug}.mdx`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { content, data } = matter(fileContent);

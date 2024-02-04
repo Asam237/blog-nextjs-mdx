@@ -3,18 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  /* Remove scrollbar: Start */
   ::-webkit-scrollbar {
     width: 0 !important;
     height: 0 !important;
   }
-  /* Remove scrollbar: End */
-
-  /* html,
-  body,
-  #__next {
-    @apply w-full h-full m-0 p-0;
-  } */
 
   html {
     text-rendering: optimizeSpeed;
@@ -24,43 +16,12 @@
   }
 
   body {
-    @apply text-gray-950 font-light;
-    background: rgb(20, 13, 49);
+    @apply text-gray-300 font-light;
+    background: rgb(35, 33, 44);
   }
-
-  /* Lenis Recommendations */
-  /* See https://github.com/studio-freight/lenis?tab=readme-ov-file#recommended-css */
-  html.lenis {
-    height: auto;
-  }
-  .lenis.lenis-smooth {
-    scroll-behavior: auto;
-  }
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-  .lenis.lenis-scrolling iframe {
-    pointer-events: none;
-  }
-
-  #__layout {
-    @apply origin-bottom;
-  }
-}
-
-@layer utilities {
-  /* Hiding class, making content visible only to screen readers but not visually */
-  /* "sr" meaning "screen-reader" */
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  h1 {
+    color: white;
+    size: 2.8rem;
+    font-weight: 800;
   }
 }

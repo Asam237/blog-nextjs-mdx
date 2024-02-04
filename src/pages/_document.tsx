@@ -1,4 +1,4 @@
-import { PoppinsUiDisplay, RobotoUiDisplay } from "@/lib/fonts";
+import {EuclidUiDisplay} from "@/lib/fonts";
 import cn from "clsx";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
@@ -9,9 +9,8 @@ export default class Blog extends Document {
         <Head />
         <body
           className={cn(
-            RobotoUiDisplay.variable,
-            PoppinsUiDisplay.variable,
-            PoppinsUiDisplay.className
+            EuclidUiDisplay.variable,
+            EuclidUiDisplay.className
           )}
         >
           <Main />
