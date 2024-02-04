@@ -23,7 +23,7 @@ const Home: FC<{ posts: PostMetadata[] }> = ({ posts }) => {
           </h4>
           <p className="text-gray-300 text-sm leading-5">
             Découvrez les dernières nouvelles personnelles, les recherches que
-            j'ai partagées dans le domaine de l'informatique.
+            j&apos;ai partagées dans le domaine de l&apos;informatique.
           </p>
         </div>
         <div className="my-6">

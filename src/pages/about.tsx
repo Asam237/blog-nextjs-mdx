@@ -41,7 +41,7 @@ const About: FC<AboutProps> = ({ mdxSource, frontMatter }) => {
             et partagez vos passions avec le monde.
             <br />
             Que vous soyez un novice enthousiaste ou un blogueur expérimenté,
-            nos applications offrent un terrain de jeu infini pour l'expression
+            nos applications offrent un terrain de jeu infini pour l&apos;expression
             individuelle.
             <br />
             Découvrez une plateforme où la créativité rencontre la technologie,
