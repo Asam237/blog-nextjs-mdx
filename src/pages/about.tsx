@@ -23,15 +23,37 @@ const About: FC<AboutProps> = ({ mdxSource, frontMatter }) => {
   return (
     <DefaultLayout>
       <div className="container mx-auto mt-8">
-        <ul className="flex flex-col gap-y-7">
-          <div className="text-gray-200">
-            <h1>{frontMatter.title}</h1>
-            <hr className="my-4 text-gray-100" />
-            <div className="text-xs leading-5">
-              <MDXRemote {...mdxSource} />
-            </div>
+        <div className="flex justify-center items-center">
+          <img src="/images/id-card.png" alt="img" className="w-32 h-32" />
+        </div>
+        <h4 className="font-bold text-xl lg:text-3xl mt-6 mb-2 text-white">
+          En ce qui concerne cette application
+        </h4>
+        <div>
+          <p className="leading-6 text-xs pt-6">
+            Explorez de nouvelles frontières créatives avec cet application de
+            création de blog intuitives.
+            <br />
+            Donnez vie à vos idées avec des fonctionnalités conviviales, des
+            designs personnalisables et des outils puissants.
+            <br />
+            Exprimez votre personnalité à travers des mises en page captivantes
+            et partagez vos passions avec le monde.
+            <br />
+            Que vous soyez un novice enthousiaste ou un blogueur expérimenté,
+            nos applications offrent un terrain de jeu infini pour l'expression
+            individuelle.
+            <br />
+            Découvrez une plateforme où la créativité rencontre la technologie,
+            où chaque publication devient une œuvre d'art numérique.
+            <br />
+            Libérez votre voix, partagez vos récits et élargissez votre impact.
+          </p>
+
+          <div className="my-6">
+            <div className="h-[1px] bg-gray-400 w-full" />
           </div>
-        </ul>
+        </div>
       </div>
     </DefaultLayout>
   );
