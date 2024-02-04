@@ -21,8 +21,8 @@ const socials = [
 export const Footer = () => (
   <footer className="my-8">
     <div className="flex justify-center items-center space-x-4">
-      {socials.map((item) => (
-        <Link href={item.link}>{item.icon}</Link>
+      {socials.map((item, index) => (
+        <Link key={index} href={item.link}>{item.icon}</Link>
       ))}
     </div>
     <div className="text-center">
