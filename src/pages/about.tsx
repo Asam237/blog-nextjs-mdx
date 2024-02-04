@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { FC } from "react";
+import Image from "next/image";
 
 interface CustomMDXRemoteSerializeResult extends MDXRemoteSerializeResult {
   scope: Record<string, unknown>;
@@ -24,7 +25,7 @@ const About: FC<AboutProps> = ({ mdxSource, frontMatter }) => {
     <DefaultLayout>
       <div className="container mx-auto mt-8">
         <div className="flex justify-center items-center">
-          <img src="/images/id-card.png" alt="img" className="w-32 h-32" />
+          <Image width={128} height={128} src="/images/id-card.png" alt="img" />
         </div>
         <h4 className="font-bold text-xl lg:text-3xl mt-6 mb-2 text-white">
           En ce qui concerne cette application
