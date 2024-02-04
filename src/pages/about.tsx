@@ -45,7 +45,7 @@ const About: FC<AboutProps> = ({ mdxSource, frontMatter }) => {
             individuelle.
             <br />
             Découvrez une plateforme où la créativité rencontre la technologie,
-            où chaque publication devient une œuvre d'art numérique.
+            où chaque publication devient une œuvre d&apos;art numérique.
             <br />
             Libérez votre voix, partagez vos récits et élargissez votre impact.
           </p>
