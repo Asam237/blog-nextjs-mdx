@@ -24,4 +24,13 @@
     size: 2.8rem;
     font-weight: 800;
   }
+
+  h2 {
+    color: white;
+    font-weight: 800;
+  }
+  h4 {
+    color: white;
+    font-weight: 800;
+  }
 }

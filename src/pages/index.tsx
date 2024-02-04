@@ -10,6 +10,8 @@ interface PostMetadata {
   slug: string;
   content: string;
   bannerUrl: string;
+  autor: string;
+  date: string;
 }
 const Home: FC<{ posts: PostMetadata[] }> = ({ posts }) => {
   return (
@@ -33,6 +35,8 @@ const Home: FC<{ posts: PostMetadata[] }> = ({ posts }) => {
               <PostCard
                 slug={`/${post.slug}`}
                 key={post.slug}
+                date={post.date}
+                autor={post.autor}
                 content={post.content}
                 title={post.title}
               />
@@ -55,12 +59,16 @@ export async function getStaticProps() {
 
     const title = data.title || "Untitled";
     const content = data.subtitle;
+    const date = data.date;
+    const autor = data.autor;
     const bannerUrl = data.bannerUrl || "Untitled";
 
     return {
       title,
       content,
       bannerUrl,
+      date,
+      autor,
       slug: fileName.replace(/\.mdx$/, ""),
     };
   });
