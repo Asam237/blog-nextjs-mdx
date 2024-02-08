@@ -17,6 +17,7 @@ Depuis votre terminal:
 ```sh
 cp .env.sample .env
 npm install
+yarn 
 ```
 
 ### Développement
@@ -25,6 +26,7 @@ Depuis votre terminal:
 
 ```sh
 npm run dev
+yarn dev
 
 ```
 
