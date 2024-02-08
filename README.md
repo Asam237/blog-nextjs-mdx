@@ -5,14 +5,14 @@ Ce projet facilite la création d'un blog en utilisant NextJS et MDX, offrant ai
 
 ## Composition
 
-Ce kit de démarrage est composé de :
+Ce kit de démarrage est composé de:
 
 - [Next.js](https://nextjs.org/)
   <br/>
 
 #### Installation des dépendances
 
-Depuis votre terminal :
+Depuis votre terminal:
 
 ```sh
 cp .env.sample .env
@@ -21,7 +21,7 @@ npm install
 
 ### Développement
 
-Depuis votre terminal :
+Depuis votre terminal:
 
 ```sh
 npm run dev
@@ -30,7 +30,7 @@ npm run dev
 
 ### Auteurs
 
-- Ce projet est maintenu par :
+- Ce projet est maintenu par:
 - Abba Sali Aboubakar Mamate (@asam_237)
 - Mon site web : https://abbasali.cm
 - Email : abbasaliaboubakar@gmail.com
