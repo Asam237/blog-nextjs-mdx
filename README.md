@@ -17,7 +17,7 @@ Depuis votre terminal:
 ```sh
 cp .env.sample .env
 npm install
-yarn 
+yarn
 ```
 
 ### Développement
@@ -32,7 +32,8 @@ yarn dev
 
 ### Auteurs
 
-- Ce projet est maintenu par:
+Ce projet est maintenu par:
+
 - Abba Sali Aboubakar Mamate (@asam_237)
 - Mon site web: https://abbasali.cm
 - Email: abbasaliaboubakar@gmail.com
