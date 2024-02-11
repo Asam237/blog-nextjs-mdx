@@ -34,6 +34,6 @@ yarn dev
 
 - Ce projet est maintenu par:
 - Abba Sali Aboubakar Mamate (@asam_237)
-- Mon site web : https://abbasali.cm
+- Mon site web: https://abbasali.cm
 - Email: abbasaliaboubakar@gmail.com
 - Mobile: (+237) 691846922
