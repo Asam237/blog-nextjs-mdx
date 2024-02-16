@@ -30,7 +30,7 @@ yarn dev
 
 ```
 
-### Auteurs
+### Auteur
 
 Ce projet est maintenu par:
 
