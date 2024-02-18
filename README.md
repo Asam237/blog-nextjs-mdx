@@ -22,7 +22,7 @@ yarn
 
 ### Développement
 
-Depuis votre terminal:
+Depuis votre terminal :
 
 ```sh
 npm run dev
